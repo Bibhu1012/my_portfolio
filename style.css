@@ -63,6 +63,53 @@ nav ul li a:hover::after{
     font-family: 'Clicker Script', cursive;
     color: #FE6D40;
 }
+.anm-text span{
+    position: relative;
+}
+.anm-text span::before{
+    content: "Web Developer";
+    animation: words 20s infinite;
+}
+.anm-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: black;
+    border-left: 2px solid #FE6D40;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid black;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "FrontEnd Developer";
+    }
+    21%,20%{
+        content: "Web Designer";
+    }
+    41%,20%{
+        content: "Android/iOS App Developer";
+    }
+    61%,20%{
+        content: "Graphic Designe";
+    }
+    81%,20%{
+        content: "Web Developer";
+    }
+}
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
 .btn-container .mybutton{
     text-decoration: none;
     border: .1rem solid #FE6D40;
