@@ -463,22 +463,6 @@ nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    .anm-text span::before,
-    .anm-text span::after {
-        width: 100%;
-        text-align: center;
-        right: 0;
-    }
-
-    .anm-text span::after {
-        border-left: none;
-        border-top: 2px solid #FE6D40;
-        height: calc(100% + 8px);
-        top: -8px;
-    }
-}
-
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images1/phone-background1.png);
