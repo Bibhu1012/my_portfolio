@@ -312,7 +312,6 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #FE6D40;
 }
-}
 .btn-dl{
     display: inline-block;
     margin: 50px auto;
@@ -347,6 +346,31 @@ nav ul li a:hover::after{
     transition: width 0.2s ease-in-out;
   }
   
+/* .btn-dl{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #FE6D40;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn-dl:hover{
+    background: #FE6D40;
+}
+.btn-dl{
+    display: inline-block;
+    background: #FE6D40;
+}
+.btn-dl::before{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: fit-content;
+    background: #FE6D40;
+} */
 .contact-right form{
     width: 100%;
 }
@@ -410,7 +434,7 @@ nav .fas{
     }
     .btn-container{
         display: inline-flex;
-        margin-top: 99%;
+        margin-top: 95%;
         align-items: center;
         margin-left: 8%;
     }
