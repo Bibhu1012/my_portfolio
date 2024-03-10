@@ -73,7 +73,7 @@ nav ul li a:hover::after{
 .anm-text span::after{
     content: "";
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 8.5px);
     height: 100%;
     background-color: black;
     border-left: 2px solid #FE6D40;
@@ -87,19 +87,19 @@ nav ul li a:hover::after{
 }
 @keyframes words{
     0%,20%{
-        content: "FrontEnd Developer";
+        content: " FrontEnd Developer";
     }
     21%,20%{
-        content: "Web Designer";
+        content: " Web Designer";
     }
     41%,20%{
-        content: "App Developer";
+        content: " App Developer";
     }
     61%,20%{
-        content: "Graphic Designe";
+        content: " Graphic Designe";
     }
     81%,20%{
-        content: "Web Developer";
+        content: " Web Developer";
     }
 }
 @keyframes typing{
@@ -107,7 +107,7 @@ nav ul li a:hover::after{
         width: 0;
     }
     5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 8px);
+        width: calc(100% + 8.5px);
     }
 }
 .btn-container .mybutton{
