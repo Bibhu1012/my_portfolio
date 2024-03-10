@@ -375,7 +375,9 @@ nav .fas{
     }
     .btn-container{
         display: inline-flex;
-        margin-top: 85%;
+        margin-top: 90%;
+        align-items: center;
+        margin-left: 8%;
     }
     .btn-container .mybutton{
         font-size: .8rem;
