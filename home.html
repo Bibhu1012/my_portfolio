@@ -263,6 +263,50 @@
         looped:true
     })
     </script>
+
+    <!-- Add this script to your HTML file -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the download button
+      var downloadBtn = document.querySelector('.btn-dl');
+  
+      // Add click event listener to the download button
+      downloadBtn.addEventListener('click', function () {
+        // Disable the button to prevent multiple clicks
+        downloadBtn.disabled = true;
+  
+        // Change button text to indicate the download is in progress
+        downloadBtn.innerHTML = '<i class="dow fa-solid fa-download"></i> Downloading...';
+  
+        // Simulate download progress
+        simulateDownload();
+      });
+  
+      // Function to simulate download progress
+      function simulateDownload() {
+        var progress = 0;
+        var progressBar = document.createElement('div');
+        progressBar.className = 'progress-bar';
+        downloadBtn.appendChild(progressBar);
+  
+        var interval = setInterval(function () {
+          progress += 10; // Adjust the step size as needed
+          progressBar.style.width = progress + '%';
+  
+          if (progress >= 100) {
+            clearInterval(interval);
+  
+            // Reset the button after a delay
+            setTimeout(function () {
+              downloadBtn.disabled = false;
+              downloadBtn.innerHTML = '<i class="dow fa-solid fa-download"></i> Download Resume';
+              progressBar.remove();
+            }, 500);
+          }
+        }, 200); // Adjust the interval as needed
+      }
+    });
+  </script>
 </body>
 
 </html>
