@@ -312,6 +312,41 @@ nav ul li a:hover::after{
     display: inline-block;
     background: #FE6D40;
 }
+}
+.btn-dl{
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #FE6D40;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+.btn-dl:hover{
+    background: #FE6D40;
+}
+.btn-dl::before{
+    content: '';
+    top: 0%;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: #FE6D40;
+}
+/* Add this CSS to your style.css file */
+.progress-bar {
+    background-color: #FE6D40;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    transition: width 0.2s ease-in-out;
+  }
+  
 .contact-right form{
     width: 100%;
 }
